@@ -1,0 +1,17 @@
+{
+    "name": "MPewsey.HexagonalUI.Editor",
+    "references": [
+        "GUID:f440d987bce314b6eb721572e7cbdd60"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
