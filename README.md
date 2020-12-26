@@ -8,9 +8,11 @@ Unity currently does not offer a built-in layout group for creating stackings of
 
 ## Usage
 
-To use, simply attach the `HexLayoutGroup` component to a Game Object, as you would with Unity's built-in layout group components. The cell orientation property is based on the direction of the hexagonal element's long diagonal. In the image above, the hexagons on the top feature a horizontal cell orientation, whereas the hexagons on the bottom feature a vertical orientation.
+The package may be downloaded from the [Releases](https://github.com/mpewsey/HexagonalUI/releases) page. To use, simply import the package and attach the `HexLayoutGroup` component to a Game Object, as you would with Unity's built-in layout group components. The cell orientation component setting is based on the direction of the hexagonal element's long diagonal. In the image above, the hexagons on the top feature a horizontal cell orientation, whereas the hexagons on the bottom feature a vertical orientation.
 
 Due to the staggering of the hexagonal elements, the default `Button` component input navigation tends to navigate randomly. Therefore, if buttons will serve as the children of the layout group, it is recommended that the `HexButton` component, which provides more regular navigation behaviour, be used instead.
+
+An example scene is also provided in the package.
 
 ## Tile Art Creation Guidance
 
