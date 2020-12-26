@@ -13,6 +13,7 @@ namespace MPewsey.HexagonalUI
     /// component in lieu of the built in Button component for more
     /// intuitive input navigation.
     /// </summary>
+    [RequireComponent(typeof(RectTransform))]
     public class HexLayoutGroup : LayoutGroup
     {
         [SerializeField]
