@@ -1,0 +1,14 @@
+{
+    "name": "com.mpewsey.hexagonalui",
+    "author": "Matt Pewsey",
+    "displayName": "HexagonalUI",
+    "version": "1.2.0",
+    "unity": "2018.1",
+    "keywords": [
+        "unity",
+        "ui",
+        "hexagonal-grids"
+    ],
+    "description": "A hexagonal grid layout group for Unity.",
+    "samples": []
+}
