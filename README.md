@@ -4,7 +4,7 @@
 
 Unity currently does not offer a built-in layout group for creating stackings of hexagonal elements, such as those sometimes used for skill grids. This package aims to fill that gap by providing a hexagonal layout group that will page UI elements into a grid.
 
-![HexLayoutGroup](HexLayoutGroup.png)
+![HexLayoutGroup](Samples~/HexLayoutGroup.png)
 
 ## Installation
 

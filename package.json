@@ -10,5 +10,11 @@
         "hexagonal-grids"
     ],
     "description": "A hexagonal grid layout group for Unity.",
-    "samples": []
+    "samples": [
+    {
+      "displayName": "Samples",
+      "description": "Samples for usage of the hexagonal layout group.",
+      "path": "Samples~"
+    }
+    ]
 }
