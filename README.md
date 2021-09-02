@@ -8,7 +8,11 @@ Unity currently does not offer a built-in layout group for creating stackings of
 
 ## Installation
 
-To add the package to a project, select `Window > Package Manager` in Unity. Then, under the `+` sign, select `Add package from git URL...`, paste `https://github.com/mpewsey/HexagonalUI.git` into the text field, and click `Add`.
+To add the package to a project, select `Window > Package Manager` in Unity.
+
+Under the `+` sign, select `Add package from git URL...`.
+
+Paste `https://github.com/mpewsey/HexagonalUI.git` into the text field, and click `Add`.
 
 ## Usage
 
