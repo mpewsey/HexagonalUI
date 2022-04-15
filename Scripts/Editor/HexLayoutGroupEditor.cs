@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEditor;
 using UnityEngine;
-using UnityEditor;
 
 namespace MPewsey.HexagonalUI.Editor
 {
@@ -16,13 +14,11 @@ namespace MPewsey.HexagonalUI.Editor
             var prop = serializedObject.GetIterator();
             GUI.enabled = false;
             var enterChildren = true;
-            
+
             while (prop.NextVisible(enterChildren))
             {
                 if (prop.name != "_constraintCount" || !flexibleConstraint)
-                {
                     EditorGUILayout.PropertyField(prop, true);
-                }
 
                 GUI.enabled = true;
                 enterChildren = false;
