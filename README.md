@@ -1,5 +1,7 @@
 # HexagonalUI
 
+[![Docs](https://github.com/mpewsey/HexagonalUI/actions/workflows/docs.yml/badge.svg?event=push)](https://mpewsey.github.io/HexagonalUI)
+
 ## Purpose
 
 Unity currently does not offer a built-in layout group for creating stackings of hexagonal elements, such as those sometimes used for skill grids. This package aims to fill that gap by providing a hexagonal layout group that will page UI elements into a grid.
