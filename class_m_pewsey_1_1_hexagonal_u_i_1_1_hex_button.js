@@ -7,12 +7,12 @@ var class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button =
     [ "FindSelectableOnUp", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#a275bcb83846969b3f133254fc76a71bb", null ],
     [ "GetAxis", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#abdf5ed660a27424ac6787a3022cb526e", null ],
     [ "GetFlatIndex", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#a71d4d0afaaf7538f3d536f1c03812413", null ],
+    [ "GetIndex", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#a0021046a5344a2e12419649d71822f01", null ],
     [ "GetSelectable", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#a8922fa4ec8602fa661ac53356fd48229", null ],
     [ "GetSelectableOnDown", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#aa06f234927d630cd118b5dcd424fe53c", null ],
     [ "GetSelectableOnLeft", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#a8dd09a4cf1e958c9f2bf72cd684c771f", null ],
     [ "GetSelectableOnRight", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#a778cac5111236149ca25f2003973701a", null ],
     [ "GetSelectableOnUp", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#a1a953e42e43e43238a86afb276132127", null ],
     [ "SetSiblingSelectables", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#a74c4385c74973aea00bee64944dd5a5b", null ],
-    [ "int", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#a7cdf9635fc63a768b8f48e07ac0b5683", null ],
     [ "SiblingSelectables", "class_m_pewsey_1_1_hexagonal_u_i_1_1_hex_button.html#ac32669d1256eb6474d3bd8edce61395a", null ]
 ];
