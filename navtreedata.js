@@ -31,10 +31,11 @@ var NAVTREE =
     [ "Tile Art Creation Guidance", "index.html#autotoc_md4", null ],
     [ "Changelog", "md__github_workspace__c_h_a_n_g_e_l_o_g.html", [
       [ "Development", "md__github_workspace__c_h_a_n_g_e_l_o_g.html#autotoc_md6", null ],
-      [ "v1.3.0", "md__github_workspace__c_h_a_n_g_e_l_o_g.html#autotoc_md7", null ],
-      [ "v1.2.0", "md__github_workspace__c_h_a_n_g_e_l_o_g.html#autotoc_md8", null ],
-      [ "v1.1.0", "md__github_workspace__c_h_a_n_g_e_l_o_g.html#autotoc_md9", null ],
-      [ "v1.0.0", "md__github_workspace__c_h_a_n_g_e_l_o_g.html#autotoc_md10", null ]
+      [ "v1.3.1", "md__github_workspace__c_h_a_n_g_e_l_o_g.html#autotoc_md7", null ],
+      [ "v1.3.0", "md__github_workspace__c_h_a_n_g_e_l_o_g.html#autotoc_md8", null ],
+      [ "v1.2.0", "md__github_workspace__c_h_a_n_g_e_l_o_g.html#autotoc_md9", null ],
+      [ "v1.1.0", "md__github_workspace__c_h_a_n_g_e_l_o_g.html#autotoc_md10", null ],
+      [ "v1.0.0", "md__github_workspace__c_h_a_n_g_e_l_o_g.html#autotoc_md11", null ]
     ] ],
     [ "Credits", "md__credits.html", null ],
     [ "Packages", "namespaces.html", [
