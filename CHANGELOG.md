@@ -1,6 +1,8 @@
 # Changelog
 
 ## Development
+
+## v1.3.1
 * Add documentation generation via Doxygen.
 
 ## v1.3.0
