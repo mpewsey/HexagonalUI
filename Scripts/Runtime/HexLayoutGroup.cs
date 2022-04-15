@@ -1,7 +1,5 @@
 ﻿/// Copyright (c) Matt Pewsey, All Rights Reserved.
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -82,13 +80,13 @@ namespace MPewsey.HexagonalUI
             set => SetProperty(ref _constraintCount, Mathf.Max(value, 1));
         }
 
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         protected override void OnValidate()
         {
             base.OnValidate();
             ConstraintCount = Mathf.Max(ConstraintCount, 1);
         }
-        #endif
+#endif
 
         /// <summary>
         /// Calculates the minimum and preferred widths for the object.
