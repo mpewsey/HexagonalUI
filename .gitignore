@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Dd]ocs~/[Oo]utput/
 
 .DS_Store
 
