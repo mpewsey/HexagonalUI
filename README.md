@@ -1,6 +1,6 @@
 # HexagonalUI
 
-[![Docs](https://github.com/mpewsey/HexagonalUI/actions/workflows/docs.yml/badge.svg?event=push)](https://mpewsey.github.io/HexagonalUI)
+[![Docs](https://github.com/mpewsey/HexagonalUI/workflows/Docs/badge.svg?event=push)](https://mpewsey.github.io/HexagonalUI)
 
 ## Purpose
 
