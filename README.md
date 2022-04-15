@@ -4,15 +4,25 @@
 
 Unity currently does not offer a built-in layout group for creating stackings of hexagonal elements, such as those sometimes used for skill grids. This package aims to fill that gap by providing a hexagonal layout group that will page UI elements into a grid.
 
-![HexLayoutGroup](Samples~/HexLayoutGroup.png)
+![HexLayoutGroup](https://user-images.githubusercontent.com/23442063/163601049-a1522652-6063-4976-ae87-35b92b21187e.png)
 
 ## Installation
 
-To add the package to a project, select `Window > Package Manager` in Unity.
+To add the package to a project, in Unity, select `Window > Package Manager`.
 
-Under the `+` sign, select `Add package from git URL...`.
+![HexagonalUI](https://user-images.githubusercontent.com/23442063/163601100-191d8699-f4fd-42cc-96d4-f6aa5a8ae29b.png)
 
-Paste `https://github.com/mpewsey/HexagonalUI.git` into the text field, and click `Add`.
+Select `Add package from git URL...` and paste the following URL:
+
+```
+https://github.com/mpewsey/HexagonalUI.git
+```
+
+NOTE: To lock into a specific version, append `#{VERSION_TAG}` to the end of the URL. For example:
+
+```
+https://github.com/mpewsey/HexagonalUI.git#v1.3.0
+```
 
 ## Usage
 
