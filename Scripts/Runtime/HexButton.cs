@@ -25,10 +25,7 @@ namespace MPewsey.HexagonalUI
         private static int GetAxis(Vector3 direction)
         {
             if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
-            {
                 return 0;
-            }
-
             return 1;
         }
 
@@ -108,29 +105,24 @@ namespace MPewsey.HexagonalUI
             var result = FindSelectable(direction);
 
             if (result == null || transform.parent == null || !IsActive())
-            {
                 return result;
-            }
 
             var hexLayout = transform.parent.GetComponent<HexLayoutGroup>();
             var directionAxis = GetAxis(direction);
 
             if (hexLayout == null || directionAxis != (int)hexLayout.CellOrientation)
-            {
                 return result;
-            }
 
             SetSiblingSelectables();
             var startAxis = (int)hexLayout.StartAxis;
             var rows = hexLayout.RowCount(SiblingSelectables.Count);
             var columns = hexLayout.ColumnCount(SiblingSelectables.Count);
-            var (row, column) = GetIndex(rows, columns, startAxis);
+            var index = GetIndex(rows, columns, startAxis);
+            var (row, column) = (index.x, index.y);
             Selectable selectable;
 
             if (row < 0 || column < 0)
-            {
                 return result;
-            }
 
             if (directionAxis == 0)
             {
@@ -161,9 +153,7 @@ namespace MPewsey.HexagonalUI
                 var index = GetFlatIndex(i, column, rows, columns, startAxis);
 
                 if (CanNavigateTo(SiblingSelectables[index]))
-                {
                     return SiblingSelectables[index];
-                }
             }
 
             return null;
@@ -179,9 +169,7 @@ namespace MPewsey.HexagonalUI
                 var index = GetFlatIndex(i, column, rows, columns, startAxis);
 
                 if (index < SiblingSelectables.Count && CanNavigateTo(SiblingSelectables[index]))
-                {
                     return SiblingSelectables[index];
-                }
             }
 
             return null;
@@ -197,9 +185,7 @@ namespace MPewsey.HexagonalUI
                 var index = GetFlatIndex(row, i, rows, columns, startAxis);
 
                 if (index < SiblingSelectables.Count && CanNavigateTo(SiblingSelectables[index]))
-                {
                     return SiblingSelectables[index];
-                }
             }
 
             return null;
@@ -215,9 +201,7 @@ namespace MPewsey.HexagonalUI
                 var index = GetFlatIndex(row, i, rows, columns, startAxis);
 
                 if (CanNavigateTo(SiblingSelectables[index]))
-                {
                     return SiblingSelectables[index];
-                }
             }
 
             return null;
@@ -241,9 +225,7 @@ namespace MPewsey.HexagonalUI
         private static int GetFlatIndex(int row, int column, int rows, int columns, int startAxis)
         {
             if (startAxis == 0)
-            {
                 return row * columns + column;
-            }
 
             return column * rows + row;
         }
@@ -252,22 +234,20 @@ namespace MPewsey.HexagonalUI
         /// Returns the row-column index of the button based on its flat
         /// index in the sibling selectables list.
         /// </summary>
-        private (int, int) GetIndex(int rows, int columns, int startAxis)
+        private Vector2Int GetIndex(int rows, int columns, int startAxis)
         {
             for (int i = 0; i < SiblingSelectables.Count; i++)
             {
                 if (SiblingSelectables[i] == this)
                 {
                     if (startAxis == 0)
-                    {
-                        return (i / columns, i % columns);
-                    }
+                        return new Vector2Int(i / columns, i % columns);
 
-                    return (i % rows, i / rows);
+                    return new Vector2Int(i % rows, i / rows);
                 }
             }
 
-            return (-1, -1);
+            return new Vector2Int(-1, -1);
         }
     }
 }

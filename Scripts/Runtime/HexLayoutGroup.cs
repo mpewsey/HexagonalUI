@@ -156,21 +156,15 @@ namespace MPewsey.HexagonalUI
         private float ContentHeight(int rows)
         {
             if (rows <= 0)
-            {
                 return 0.0f;
-            }
 
             float value;
             var cellSize = CellSize();
 
             if (CellOrientation == Axis.Horizontal)
-            {
                 value = rows * (cellSize.y + Spacing.y) - Spacing.y + 0.5f * (cellSize.y + Spacing.y);
-            }
             else
-            {
                 value = rows * (0.75f * cellSize.y + Spacing.y) - Spacing.y + 0.25f * cellSize.y;
-            }
 
             return Mathf.Max(value, 0.0f);
         }
@@ -181,21 +175,15 @@ namespace MPewsey.HexagonalUI
         private float ContentWidth(int columns)
         {
             if (columns <= 0)
-            {
                 return 0.0f;
-            }
 
             float value;
             var cellSize = CellSize();
 
             if (CellOrientation == Axis.Horizontal)
-            {
                 value = columns * (0.75f * cellSize.x + Spacing.x) - Spacing.x + 0.25f * cellSize.x;
-            }
             else
-            {
                 value = columns * (cellSize.x + Spacing.x) - Spacing.x + 0.5f * (cellSize.x + Spacing.x);
-            }
 
             return Mathf.Max(value, 0.0f);
         }
@@ -217,15 +205,9 @@ namespace MPewsey.HexagonalUI
                 float x, y;
 
                 if (StartAxis == Axis.Horizontal)
-                {
-                    row = i / columns;
-                    column = i % columns;
-                }
+                    (row, column) = (i / columns, i % columns);
                 else
-                {
-                    row = i % rows;
-                    column = i / rows;
-                }
+                    (row, column) = (i % rows, i / rows);
 
                 if (CellOrientation == Axis.Horizontal)
                 {
@@ -233,9 +215,7 @@ namespace MPewsey.HexagonalUI
                     y = y0 + row * (cellSize.y + Spacing.y);
 
                     if (IsEven(column))
-                    {
                         y += 0.5f * (cellSize.y + Spacing.y);
-                    }
                 }
                 else
                 {
@@ -243,9 +223,7 @@ namespace MPewsey.HexagonalUI
                     y = y0 + row * (0.75f * cellSize.y + Spacing.y);
 
                     if (IsEven(row))
-                    {
                         x += 0.5f * (cellSize.x + Spacing.x);
-                    }
                 }
 
                 SetChildAlongAxis(rectChildren[i], 0, x, cellSize.x);
@@ -333,9 +311,7 @@ namespace MPewsey.HexagonalUI
             var constraint = Mathf.Min(GetConstraintCount(), count);
 
             if (constraint > 0 && !ConstraintIsRowCount())
-            {
                 return (count - 1) / constraint + 1;
-            }
 
             return constraint;
         }
@@ -356,9 +332,7 @@ namespace MPewsey.HexagonalUI
             var constraint = Mathf.Min(GetConstraintCount(), count);
 
             if (constraint > 0 && ConstraintIsRowCount())
-            {
                 return (count - 1) / constraint + 1;
-            }
 
             return constraint;
         }
@@ -372,9 +346,7 @@ namespace MPewsey.HexagonalUI
             var shortDiagonal = 0.86602540378f * longDiagonal;
 
             if (CellOrientation == Axis.Horizontal)
-            {
                 return new Vector2(longDiagonal, shortDiagonal);
-            }
 
             return new Vector2(shortDiagonal, longDiagonal);
         }
@@ -386,9 +358,7 @@ namespace MPewsey.HexagonalUI
         public bool ConstraintIsRowCount()
         {
             if (Constraint == ConstraintType.Flexible)
-            {
                 return StartAxis == Axis.Vertical;
-            }
 
             return Constraint == ConstraintType.FixedRow;
         }
@@ -399,9 +369,7 @@ namespace MPewsey.HexagonalUI
         public int GetConstraintCount()
         {
             if (Constraint == ConstraintType.Flexible)
-            {
                 return FlexibleConstraintCount();
-            }
 
             return ConstraintCount;
         }
@@ -412,9 +380,7 @@ namespace MPewsey.HexagonalUI
         private int FlexibleConstraintCount()
         {
             if (StartAxis == Axis.Horizontal)
-            {
                 return FlexibleWidthConstraintCount();
-            }
 
             return FlexibleHeightConstraintCount();
         }
@@ -429,13 +395,9 @@ namespace MPewsey.HexagonalUI
             var size = rectTransform.rect.size;
 
             if (CellOrientation == Axis.Horizontal)
-            {
                 value = (size.x + Spacing.x - 0.25f * cellSize.x - padding.horizontal) / (0.75f * cellSize.x + Spacing.x);
-            }
             else
-            {
                 value = (size.x + Spacing.x - 0.5f * (cellSize.x + Spacing.x) - padding.horizontal) / (cellSize.x + Spacing.x);
-            }
 
             return Mathf.Max(Mathf.FloorToInt(value), 1);
         }
@@ -450,13 +412,9 @@ namespace MPewsey.HexagonalUI
             var size = rectTransform.rect.size;
 
             if (CellOrientation == Axis.Horizontal)
-            {
                 value = (size.y + Spacing.y - 0.5f * (cellSize.y + Spacing.y) - padding.vertical) / (cellSize.y + Spacing.y);
-            }
             else
-            {
                 value = (size.y + Spacing.y - 0.25f * cellSize.y - padding.vertical) / (0.75f * cellSize.y + Spacing.y);
-            }
 
             return Mathf.Max(Mathf.FloorToInt(value), 1);
         }

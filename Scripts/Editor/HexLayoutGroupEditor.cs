@@ -18,9 +18,7 @@ namespace MPewsey.HexagonalUI.Editor
             while (prop.NextVisible(enterChildren))
             {
                 if (prop.name != "_constraintCount" || !flexibleConstraint)
-                {
                     EditorGUILayout.PropertyField(prop, true);
-                }
 
                 GUI.enabled = true;
                 enterChildren = false;
