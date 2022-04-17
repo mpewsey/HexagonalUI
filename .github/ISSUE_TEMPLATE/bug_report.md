@@ -7,8 +7,6 @@ assignees: ''
 
 ---
 
-**NOTE: FOR QUESTIONS UNRELATED TO BUGS OR FEATURE REQUESTS, PLEASE USE THE [DISCUSSIONS BOARD](https://github.com/mpewsey/HexagonalUI/discussions)**
-
 **Describe the bug**
 A clear and concise description of what the bug is.
 
