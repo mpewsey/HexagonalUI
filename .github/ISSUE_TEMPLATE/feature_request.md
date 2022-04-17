@@ -7,8 +7,6 @@ assignees: ''
 
 ---
 
-**NOTE: FOR QUESTIONS UNRELATED TO BUGS OR FEATURE REQUESTS, PLEASE USE THE [DISCUSSIONS BOARD](https://github.com/mpewsey/HexagonalUI/discussions)**
-
 **Is your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
