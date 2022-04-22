@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace MPewsey.HexagonalUI.Editor
 {
+    /// <summary>
+    /// The HexLayoutGroup custom inspector.
+    /// </summary>
     [CustomEditor(typeof(HexLayoutGroup))]
     public class HexLayoutGroupEditor : UnityEditor.Editor
     {

@@ -874,7 +874,7 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = ../Scripts/Runtime \
+INPUT                  = ../Scripts \
                          ../README.md \
                          ../CHANGELOG.md \
                          Credits.md
@@ -984,7 +984,7 @@ EXCLUDE_SYMLINKS       = NO
 
 EXCLUDE_PATTERNS       = *netstandard2.0 \
                          *net6.0 \
-                         *ManiaMap.Tests
+                         *Scripts/Tests
 
 # The EXCLUDE_SYMBOLS tag can be used to specify one or more symbol names
 # (namespaces, classes, functions, etc.) that should be excluded from the
