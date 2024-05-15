@@ -10,7 +10,7 @@ Unity currently does not offer a built-in layout group for creating stackings of
 
 ## Installation
 
-To add the package to a project, in Unity, select `Window > Package Manager`.
+In Unity, select `Window > Package Manager`.
 
 ![HexagonalUI](https://user-images.githubusercontent.com/23442063/163601100-191d8699-f4fd-42cc-96d4-f6aa5a8ae29b.png)
 
@@ -20,10 +20,10 @@ Select `Add package from git URL...` and paste the following URL:
 https://github.com/mpewsey/HexagonalUI.git
 ```
 
-RECOMMENDED: To lock into a specific version, append `#{VERSION_TAG}` to the end of the URL. For example:
+To lock into a specific version, append `#{VERSION_TAG}` to the end of the URL. For example:
 
 ```
-https://github.com/mpewsey/HexagonalUI.git#v1.3.0
+https://github.com/mpewsey/HexagonalUI.git#v1.3.1
 ```
 
 ## Usage
